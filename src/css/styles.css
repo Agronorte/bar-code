@@ -68,3 +68,14 @@ button:hover {
     resize: none; /* Impede o redimensionamento do textarea */
     /* Outros estilos conforme necessário */
 }
+
+.notification {
+    color: red;
+    font-size: 14px;
+}
+
+.status {
+    color: blue;
+    font-size: 14px;
+}
+
