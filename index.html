@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Projeto JavaScript</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Entrada de Dados</h1>
+    <form id="dataForm">
+        <div>
+            <label for="order">Ordem de Carga:</label>
+            <input type="text" id="order" name="order" required>
+        </div>
+        <div>
+            <label for="barcode">Código de Barras:</label>
+            <input type="text" id="barcode" name="barcode" class="large-input" required>
+        </div>
+        <button type="submit">Enviar</button>
+    </form>
+    <div id="result"></div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
