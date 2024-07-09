@@ -1,7 +1,6 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
-    text-align: center;
     margin: 0;
     padding: 20px;
 }
@@ -31,25 +30,41 @@ input {
     width: 200px;
 }
 
-input.large-input {
-    width: 400px; /* Ajuste este valor conforme necessário */
+.large-input {
+    width: 500px; /* Ajuste este valor conforme necessário */
+    height: 300px;
 }
 
 button {
     padding: 10px 20px;
     font-size: 16px;
-    background-color: #007BFF;
+    background-color: #04eb23;
     color: white;
     border: none;
     cursor: pointer;
+    align-items: center;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #05c215;
 }
 
 #result {
     margin-top: 20px;
     font-size: 18px;
     color: #333;
+}
+
+.container_bar {
+    display: flex;
+    flex-direction: row;
+   
+}
+
+#barcode {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    resize: none; /* Impede o redimensionamento do textarea */
+    /* Outros estilos conforme necessário */
 }
