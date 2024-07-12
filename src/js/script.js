@@ -1,3 +1,24 @@
+document.getElementById('dataForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const order = document.getElementById('order').value;
+    const barcode = document.getElementById('barcode').value;
+
+    fetch('http://localhost:3000/submit', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ order, barcode })
+    })
+    .then(response => response.text())
+    .then(data => {
+        document.getElementById('result').innerText = data;
+    })
+    .catch(error => console.error('Error:', error));
+});
+
+
 const http = require('http');
 
 const hostname = '192.168.100.169'; 
